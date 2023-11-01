@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/icon" href="img/To-Do_List.png" />
+        <title>To-Do List</title>
+    </head>
+
+    <body>
+        
+        <main id="app">
+            
+            <section class="todo-list">
+                
+                <h3>To-Do List</h3>
+                
+                <div 
+                    class="all-todos"
+                    v-if="filteredTaskList.length > 0"
+                >
+                    <div 
+                        class="single-todo"
+                        v-for="task in filteredTaskList"
+                        @click="task.active = !task.active"
+                        :class="{ done : task.active }"
+                    >
+                        <p>{{ task.message }}</p>
+                    </div>
+
+                </div>
+
+                <button class="clear" @click="removeTask()">Clean all</button>
+
+                <input type="text" id="taskMessage" name="taskMessage" v-model="newTask.message" placeholder="Escreva uma nova tarefa...">
+                <button class="add" @click="addTask()">Add</button>
+
+                <div class="instructions">
+                    Instructions:
+                    <ul>
+                        <li>Click on task text to toggle done/not done</li>
+                        <li>Use the clear all button to remove all tasks</li>
+                        <li>Use input to add new tasks</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+
+</html>
