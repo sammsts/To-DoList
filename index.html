@@ -22,11 +22,10 @@
                 
                 <div 
                     class="all-todos"
-                    v-if="filteredTaskList.length > 0"
                 >
                     <div 
                         class="single-todo"
-                        v-for="task in filteredTaskList"
+                        v-for="task in taskList"
                         @click="task.active = !task.active"
                         :class="{ done : task.active }"
                     >
@@ -35,7 +34,13 @@
 
                 </div>
 
-                <button class="clear" @click="removeTask()">Clean all</button>
+                <button 
+                    class="clear"
+                    @click="taskList=[]"
+                    v-if="taskList.length"
+                >
+                    Clean all
+                </button>
 
                 <input type="text" id="taskMessage" name="taskMessage" v-model="newTask.message" placeholder="Escreva uma nova tarefa...">
                 <button class="add" @click="addTask()">Add</button>
