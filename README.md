@@ -2,7 +2,7 @@
 
 > Status: Developed ✅
 
-![1](https://github.com/sammsts/To-DoList/assets/100657343/0368b15a-b4b1-4c03-a653-aee7becaedfa)
+![1](https://github.com/sammsts/To-DoList/assets/100657343/7d764a3a-75d8-44d5-a1ba-5913eff58194)
 
 ## A to-do list. The project was developed using Vue Js 3.0, based on a learning course focused on technology.
 
@@ -40,4 +40,4 @@ In a practical and quick way you can install the "Live Server" extension, which 
 1) Open the project and click "Go Live" in the code editor status bar to turn the server on/off.
     *If Go Live is not appearing, open the HTML file and right-click anywhere in the file, click Open with Live Server.
 
-![To-Do_List](https://github.com/sammsts/To-DoList/assets/100657343/ea6442bd-38e6-4c31-90f8-7818a17246a3)
+https://github.com/sammsts/To-DoList/assets/100657343/8c7bf9d7-286b-4b74-a787-e86ff622508d
