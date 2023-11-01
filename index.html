@@ -29,7 +29,7 @@
                         @click="task.active = !task.active"
                         :class="{ done : task.active }"
                     >
-                        <p>{{ task.message }}</p>
+                        <p>{{ task.text }}</p>
                     </div>
 
                 </div>
@@ -42,7 +42,7 @@
                     Clean all
                 </button>
 
-                <input type="text" id="taskMessage" name="taskMessage" v-model="newTask.message" placeholder="Escreva uma nova tarefa...">
+                <input type="text" id="tasktext" name="tasktext" v-model="newTask.text" placeholder="Escreva uma nova tarefa...">
                 <button class="add" @click="addTask()">Add</button>
 
                 <div class="instructions">
