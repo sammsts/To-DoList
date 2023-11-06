@@ -19,7 +19,7 @@ Reference: https://vuejs.org/guide/introduction.html
 + Complete the task
 + Remove all tasks
 
-+ ## Technologies Used:
+## Technologies Used:
 
 <table>
   <tr>
